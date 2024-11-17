@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+  }
+  .gallery {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .gallery img {
+    display: block;
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  /* Загальні стилі для форми */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стилі для кожного поля введення */
+  .login-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Стилі для кнопки входу */
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Додаткові стилі для відступів */
+  .login-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Стилі для віджета зміни кольору */
+.widget {
+    max-width: 320px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Стилі для заголовка віджета */
+.widget p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Стилі для span, що відображає колір */
+.color {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Стилі для кнопки зміни кольору */
+.change-color {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.change-color:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.change-color:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 500px;
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #controls input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  #controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #controls button[data-create] {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #controls button[data-create]:hover {
+    background-color: #0056b3;
+  }
+  
+  #controls button[data-destroy] {
+    background-color: #ff4d4f;
+    color: #fff;
+  }
+  
+  #controls button[data-destroy]:hover {
+    background-color: #d9363e;
+  }
+  
+  #boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  #boxes div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #categories {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .item {
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item ul li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  .item ul li:hover {
+    background-color: #e0e7ff;
+  }
+  
